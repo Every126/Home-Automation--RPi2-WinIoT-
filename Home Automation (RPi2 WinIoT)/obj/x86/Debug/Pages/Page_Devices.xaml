@@ -31,13 +31,13 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Image Width="48" Source="ms-appx:///Resources/Image/Common/HumanDetected_None_48.png"/>
+                    <Image x:ConnectionId='3' Name="Img_PIR_Status" Width="48" Source="ms-appx:///Resources/Image/Common/HumanDetected_None_48.png"/>
                     <Image Grid.Column="1" Width="48" Source="ms-appx:///Resources/Image/Common/AmbientLight_48.png"/>
                     <Image Grid.Column="2" Source="ms-appx:///Resources/Image/Common/Temprature_48.png" Width="48"/>
 
-                    <TextBlock x:ConnectionId='3' Name="Lbl_PIR_Status" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Margin="5" Foreground="#FFF">None</TextBlock>
-                    <TextBlock x:ConnectionId='4' Name="Lbl_LightIntensity" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="5" Foreground="#FFF">500 / 1023</TextBlock>
-                    <TextBlock x:ConnectionId='5' Name="Lbl_Temp_C" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Margin="5" Foreground="#FFF">27 °C</TextBlock>
+                    <TextBlock x:ConnectionId='4' Name="Lbl_PIR_Status" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Margin="5" Foreground="#FFF">None</TextBlock>
+                    <TextBlock x:ConnectionId='5' Name="Lbl_LightIntensity" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="5" Foreground="#FFF">500 / 1023</TextBlock>
+                    <TextBlock x:ConnectionId='6' Name="Lbl_Temp_C" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Margin="5" Foreground="#FFF">27 °C</TextBlock>
 
                 </Grid>
             </StackPanel>

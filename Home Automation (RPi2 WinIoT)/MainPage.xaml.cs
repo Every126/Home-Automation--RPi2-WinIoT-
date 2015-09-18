@@ -140,12 +140,20 @@ namespace Home_Automation__RPi2_WinIoT_
 
         private void Btn_ShowRooms_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            Frame_Main.Visibility = Visibility.Visible;
+            Lbl_Time.Visibility = Visibility.Collapsed;
+            Lbl_Date.Visibility = Visibility.Collapsed;
+
             Pages.Page_Room ShowRoom = new Pages.Page_Room();
             Frame_Main.Navigate(ShowRoom.GetType());
         }
 
         private void Btn_ShowConfiguration_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            Frame_Main.Visibility = Visibility.Visible;
+            Lbl_Time.Visibility = Visibility.Collapsed;
+            Lbl_Date.Visibility = Visibility.Collapsed;
+
             Pages.Page_Configuration _PC = new Pages.Page_Configuration();
             Frame_Main.Navigate(_PC.GetType());
         }
@@ -166,6 +174,13 @@ namespace Home_Automation__RPi2_WinIoT_
                 //}
                 ((Pages.Page_Devices)Frame_Main.Content).ReleaseSensorThread();
             }
+        }
+
+        private void Btn_Home_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame_Main.Visibility = Visibility.Collapsed;
+            Lbl_Time.Visibility = Visibility.Visible;
+            Lbl_Date.Visibility = Visibility.Visible;
         }
     }
 }

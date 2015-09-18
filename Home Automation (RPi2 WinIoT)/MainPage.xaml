@@ -40,7 +40,7 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 
-                <Image Grid.Column="0" Margin="30" Height="64" Source="Resources/Image/Home/Home_Icon_150.png"/>
+                <Image Name="Btn_Home" Tapped="Btn_Home_Tapped" Grid.Column="0" Margin="30" Height="64" Source="Resources/Image/Home/Home_Icon_150.png"/>
                 <Image Name="Btn_ShowRooms" Tapped="Btn_ShowRooms_Tapped" Grid.Column="1" Margin="30"  Height="64" Source="Resources/Image/Home/Icon_Room_150.png"/>
                 <Image Name="Btn_ShowConfiguration" Tapped="Btn_ShowConfiguration_Tapped" Grid.Column="5" Margin="30"  Height="64" Source="Resources/Image/Home/Icon_Settings_150.png"/>
                 
