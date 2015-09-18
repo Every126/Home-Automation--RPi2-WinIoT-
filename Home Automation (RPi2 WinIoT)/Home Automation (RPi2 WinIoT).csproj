@@ -122,6 +122,7 @@
     <None Include="Home Automation (RPi2 WinIoT)_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ArduinoSketch.ino" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

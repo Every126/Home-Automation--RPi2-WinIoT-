@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using Windows.Foundation;
@@ -94,7 +95,7 @@ namespace Home_Automation__RPi2_WinIoT_
 
         public static Library.Core.Home MyHome;
         public static Frame SharedFrame;
-
+     
         public MainPage()
         {
             this.InitializeComponent();
@@ -130,6 +131,24 @@ namespace Home_Automation__RPi2_WinIoT_
         {
             Pages.Page_Configuration _PC = new Pages.Page_Configuration();
             Frame_Main.Navigate(_PC.GetType());
+        }
+
+        private void Frame_Main_Navigated(object sender, NavigationEventArgs e)
+        {
+            
+        }
+
+        private void Frame_Main_Navigating(object sender, NavigatingCancelEventArgs e)
+        {
+            if(Frame_Main.SourcePageType!=null && Frame_Main.SourcePageType.Name=="Page_Devices" && _CurrentDevice!=null)
+            {
+                //MethodInfo UpdateSensorData = Frame_Main.SourcePageType.GetMethod("ReleaseSensorThread");
+                //if (UpdateSensorData != null)
+                //{
+                //    UpdateSensorData.Invoke(Frame_Main.SourcePageType, null);
+                //}
+                ((Pages.Page_Devices)Frame_Main.Content).ReleaseSensorThread();
+            }
         }
     }
 }

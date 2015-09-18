@@ -165,6 +165,9 @@
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_06_DroidViews.jpg">
       <PackagePath>Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_06_DroidViews.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_07_DroidViews.jpg">
+      <PackagePath>Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_07_DroidViews.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
     </AppxPackagedFile>

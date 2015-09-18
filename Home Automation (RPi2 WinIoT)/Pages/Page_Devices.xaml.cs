@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -32,6 +33,9 @@ namespace Home_Automation__RPi2_WinIoT_.Pages
         }
 
         Library.Core.Room SelectedRoom;
+        public bool SensorCollectorAlreadyWorking = false;
+
+        private CancellationTokenSource _CTS = new CancellationTokenSource();
 
         public Page_Devices()
         {
@@ -46,7 +50,51 @@ namespace Home_Automation__RPi2_WinIoT_.Pages
             UpdateTexts();
             LoadDevices();
 
+            UpdateSensorData();
+        }
 
+        public void ReleaseSensorThread()
+        {
+            _CTS.Cancel();
+        }
+
+        public void UpdateSensorData()
+        {
+            if(SensorCollectorAlreadyWorking)
+            {
+                return;
+            }
+
+            SensorCollectorAlreadyWorking = true;
+
+            MainPage.SensorData.I2C_Slave_Address = SelectedRoom.I2C_Slave_Address;
+
+            Task Task_CollectSensorData = new Task(async () =>
+            {
+                try
+                {
+                    while (_CTS.IsCancellationRequested == false)
+                    {
+
+                        await Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+                         () =>
+                         {
+                                 Lbl_LightIntensity.Text = MainPage.SensorData.Sensors.AmbientLight.RawData.ToString();
+                                 Lbl_PIR_Status.Text = MainPage.SensorData.Sensors.PassiveIR.HumanDetected.ToString();
+                                 Lbl_Temp_C.Text = MainPage.SensorData.Sensors.Temperature.Celsius.ToString() + " °C";
+                         });
+
+                        //_CTS.Token.ThrowIfCancellationRequested();
+                        await Task.Delay(1000);
+                    }
+                }
+                catch(Exception ex)
+                {
+
+                }
+            },_CTS.Token);
+
+            Task_CollectSensorData.Start();
         }
 
         private void UpdateTexts()

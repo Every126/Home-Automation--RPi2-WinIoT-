@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-17T16:01:39.071</Modified>
+      <Modified>2015-09-18T17:24:19.907</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -60,15 +60,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\entrypoint\Home Automation %28RPi2 WinIoT%29.exe">
       <PackagePath>entrypoint\Home Automation %28RPi2 WinIoT%29.exe</PackagePath>
-      <Modified>2015-09-17T16:01:36.794</Modified>
+      <Modified>2015-09-18T17:24:19.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Home Automation %28RPi2 WinIoT%29.exe">
       <PackagePath>Home Automation %28RPi2 WinIoT%29.exe</PackagePath>
-      <Modified>2015-09-17T16:01:39.055</Modified>
+      <Modified>2015-09-18T17:24:19.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Home Automation %28RPi2 WinIoT%29.xr.xml">
       <PackagePath>Home Automation %28RPi2 WinIoT%29.xr.xml</PackagePath>
-      <Modified>2015-09-17T16:01:36.529</Modified>
+      <Modified>2015-09-18T17:21:39.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -88,7 +88,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-17T16:01:38.071</Modified>
+      <Modified>2015-09-18T17:21:40.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Resources\Image\Common\AmbientLight_48.png">
       <PackagePath>Resources\Image\Common\AmbientLight_48.png</PackagePath>
@@ -221,6 +221,10 @@
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_06_DroidViews.jpg">
       <PackagePath>Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_06_DroidViews.jpg</PackagePath>
       <Modified>2015-09-17T10:35:46.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_07_DroidViews.jpg">
+      <PackagePath>Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_07_DroidViews.jpg</PackagePath>
+      <Modified>2015-09-17T17:45:19.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

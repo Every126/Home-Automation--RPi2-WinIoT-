@@ -17,7 +17,7 @@
         <Image Grid.RowSpan="2" Stretch="Fill" Source="Resources/Image/Wallpaper/Huawei_P7_home_wallpaper_06_DroidViews.jpg" />
         
         <!-- Main Frame -->
-        <Frame x:ConnectionId='1' Name="Frame_Main" Margin="20"/>
+        <Frame x:ConnectionId='1' Name="Frame_Main" Margin="20"                                                                    />
         <!-- Bottom Bar -->
         <Border Grid.Row="1" Background="#D000">
             <Grid>

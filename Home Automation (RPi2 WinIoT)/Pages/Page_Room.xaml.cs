@@ -42,8 +42,7 @@ namespace Home_Automation__RPi2_WinIoT_.Pages
 
         private void LV_Rooms_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Pages.Page_Devices ShowDevices = new Page_Devices();
-            MainPage.SharedFrame.Navigate(ShowDevices.GetType(), new object[] { LV_Rooms.SelectedItem });
+            MainPage.SharedFrame.Navigate(typeof(Pages.Page_Devices), new object[] { LV_Rooms.SelectedItem });
         }
     }
 }
