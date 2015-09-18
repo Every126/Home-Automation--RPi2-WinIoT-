@@ -1,8 +1,10 @@
 ﻿/*
-	Arduino Sketch v0.3
+	Arduino Sketch v0.4
 
 	This sketch is written for "Home Automation using Raspberry Pi 2 and Window 10 IoT"
 	Refer this link: https://www.hackster.io/AnuragVasanwala/home-automation
+
+	This sketch is tested on Atmega328p only.
 
 	This sketch prepares an Arduino device as slave	device on I2C bus operated by
 	Raspberry Pi 2 running Windows 10 IoT Core.
@@ -13,7 +15,11 @@
 		  and performa operation based upon it. (Function: ReceiveData)
 		+ OnRequest, send 14-bytes response array based
 		  on selected mode by OnReceive. (Function: SendData)
+	
+	This sketch is provided as is without any T&C. You can use it for personal as well as
+	commercial use.
 
+	I am not liable for any loss of data or injuries caused by this sketch.
 */
 
 #include <Wire.h>  
