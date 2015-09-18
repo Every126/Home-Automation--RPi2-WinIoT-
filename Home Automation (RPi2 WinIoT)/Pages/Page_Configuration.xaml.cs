@@ -34,6 +34,10 @@ namespace Home_Automation__RPi2_WinIoT_.Pages
             if(MainPage.MyHome.Rooms.Count>0)
             {
                 UpdateRoomDetailPane(MainPage.MyHome.Rooms[0]);
+                if(MainPage.MyHome.Rooms[0].Devices.Count>0)
+                {
+                    UpdateDeviceDetailPane(MainPage.MyHome.Rooms[0], true);
+                }
             }
         }
 
@@ -256,27 +260,33 @@ namespace Home_Automation__RPi2_WinIoT_.Pages
 
         private void Btn_Save_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            // Update Room Detail
-            Library.Core.Room SelectedRoom = (Library.Core.Room)LB_Rooms.SelectedItem;
-
-            SelectedRoom.Name = Txt_RoomName.Text;
-            
-            int NewAddress = 0;
-            IFormatProvider _Culture = new CultureInfo("en-US");
-            int.TryParse(Txt_RoomI2CAddress.Text.Replace("0x",""), System.Globalization.NumberStyles.HexNumber, _Culture, out NewAddress);
-            SelectedRoom.I2C_Slave_Address = NewAddress;
-
-            SelectedRoom.ImagePath = ((ImageListClass)LV_RoomImage.SelectedItem).ImagePath;
-
-            // Update Device Detail
-            if(LB_Devices.Items.Count>0)
+            if(LB_Rooms.Items.Count>0 && LB_Rooms.SelectedIndex!=-1)
             {
-                Library.Core.Device SelectedDevice = (Library.Core.Device)LB_Devices.SelectedItem;
+                // Update Room Detail
+                Library.Core.Room SelectedRoom = (Library.Core.Room)LB_Rooms.SelectedItem;
 
-                SelectedDevice.Name = txt_DeviceName.Text;
-                SelectedDevice.Pin = (Library.Core.Device.PinsEnum)Enum.Parse(typeof(Library.Core.Device.PinsEnum), ((ComboBoxItem)cmb_DevicePin.SelectedItem).Content.ToString());
+                SelectedRoom.Name = Txt_RoomName.Text;
 
-                SelectedDevice.ImagePath = ((ImageListClass)LV_DeviceImage.SelectedItem).ImagePath;
+                int NewAddress = 0;
+                IFormatProvider _Culture = new CultureInfo("en-US");
+                int.TryParse(Txt_RoomI2CAddress.Text.Replace("0x", ""), System.Globalization.NumberStyles.HexNumber, _Culture, out NewAddress);
+                SelectedRoom.I2C_Slave_Address = NewAddress;
+
+                SelectedRoom.ImagePath = ((ImageListClass)LV_RoomImage.SelectedItem).ImagePath;
+
+                // Update Device Detail
+                if (LB_Devices.Items.Count > 0)
+                {
+                    if (LB_Devices.SelectedIndex != -1)
+                    {
+                        Library.Core.Device SelectedDevice = (Library.Core.Device)LB_Devices.SelectedItem;
+
+                        SelectedDevice.Name = txt_DeviceName.Text;
+                        SelectedDevice.Pin = (Library.Core.Device.PinsEnum)Enum.Parse(typeof(Library.Core.Device.PinsEnum), ((ComboBoxItem)cmb_DevicePin.SelectedItem).Content.ToString());
+
+                        SelectedDevice.ImagePath = ((ImageListClass)LV_DeviceImage.SelectedItem).ImagePath;
+                    }
+                }
             }
 
             // Save

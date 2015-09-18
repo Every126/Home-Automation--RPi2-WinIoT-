@@ -4,7 +4,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -95,10 +97,25 @@ namespace Home_Automation__RPi2_WinIoT_
 
         public static Library.Core.Home MyHome;
         public static Frame SharedFrame;
-     
+
         public MainPage()
         {
             this.InitializeComponent();
+
+            // Start Task that updates time
+            Task.Factory.StartNew(async () =>
+            {
+                while (true)
+                {
+                    await Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Low,
+                    () =>
+                    {
+                        Lbl_Time.Text = DateTime.Now.ToString("hh:mm tt");
+                        Lbl_Date.Text = DateTime.Now.ToString("MMMM dd, yyyy");
+                    });
+                    await Task.Delay(1000);
+                }
+            });
 
             // Load last saved Home object
             MyHome = Library.Core.Home.LoadHome().Result;
@@ -140,7 +157,7 @@ namespace Home_Automation__RPi2_WinIoT_
 
         private void Frame_Main_Navigating(object sender, NavigatingCancelEventArgs e)
         {
-            if(Frame_Main.SourcePageType!=null && Frame_Main.SourcePageType.Name=="Page_Devices" && _CurrentDevice!=null)
+            if(Frame_Main.SourcePageType!=null && Frame_Main.SourcePageType.Name=="Page_Devices")
             {
                 //MethodInfo UpdateSensorData = Frame_Main.SourcePageType.GetMethod("ReleaseSensorThread");
                 //if (UpdateSensorData != null)

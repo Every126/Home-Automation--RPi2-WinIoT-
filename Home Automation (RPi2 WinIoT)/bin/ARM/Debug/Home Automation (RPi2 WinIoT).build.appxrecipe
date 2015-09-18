@@ -18,6 +18,9 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\ARM\Debug\Core\ArduinoSketch.c">
+      <PackagePath>ArduinoSketch.c</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\ARM\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>

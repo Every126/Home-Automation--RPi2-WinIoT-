@@ -31,7 +31,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Image Width="48" Source="ms-appx:///Resources/Image/Common/HumanDetected_None_48.png"/>
+                    <Image Name="Img_PIR_Status" Width="48" Source="ms-appx:///Resources/Image/Common/HumanDetected_None_48.png"/>
                     <Image Grid.Column="1" Width="48" Source="ms-appx:///Resources/Image/Common/AmbientLight_48.png"/>
                     <Image Grid.Column="2" Source="ms-appx:///Resources/Image/Common/Temprature_48.png" Width="48"/>
 

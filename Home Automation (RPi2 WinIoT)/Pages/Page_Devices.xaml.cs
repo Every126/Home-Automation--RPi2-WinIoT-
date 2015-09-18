@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -80,7 +81,18 @@ namespace Home_Automation__RPi2_WinIoT_.Pages
                          () =>
                          {
                                  Lbl_LightIntensity.Text = MainPage.SensorData.Sensors.AmbientLight.RawData.ToString();
-                                 Lbl_PIR_Status.Text = MainPage.SensorData.Sensors.PassiveIR.HumanDetected.ToString();
+
+                                 Lbl_PIR_Status.Text = (MainPage.SensorData.Sensors.PassiveIR.HumanDetected==true)?"Detected":"None";
+                                 if(MainPage.SensorData.Sensors.PassiveIR.HumanDetected)
+                                 {
+                                     Img_PIR_Status.Source = new BitmapImage(new Uri("ms-appx:///Resources/Image/Common/HumanDetected_48.png"));
+                                 }
+                                 else
+                                 {
+                                     Img_PIR_Status.Source = new BitmapImage(new Uri("ms-appx:///Resources/Image/Common/HumanDetected_None_48.png"));
+                                 }
+                               
+                                    
                                  Lbl_Temp_C.Text = MainPage.SensorData.Sensors.Temperature.Celsius.ToString() + " °C";
                          });
 

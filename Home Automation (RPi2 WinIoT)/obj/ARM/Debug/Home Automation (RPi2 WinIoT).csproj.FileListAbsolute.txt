@@ -505,3 +505,4 @@ C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final
 C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation (RPi2 WinIoT)\Home Automation (RPi2 WinIoT)\obj\ARM\Debug\Core\Resources\Image\Common\Temprature_48.png
 C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation (RPi2 WinIoT)\Home Automation (RPi2 WinIoT)\bin\ARM\Debug\Core\Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_07_DroidViews.jpg
 C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation (RPi2 WinIoT)\Home Automation (RPi2 WinIoT)\obj\ARM\Debug\Core\Resources\Image\Wallpaper\Huawei_P7_home_wallpaper_07_DroidViews.jpg
+C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation (RPi2 WinIoT)\Home Automation (RPi2 WinIoT)\bin\ARM\Debug\Core\ArduinoSketch.c

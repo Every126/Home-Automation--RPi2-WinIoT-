@@ -49,8 +49,8 @@ namespace Home_Automation__RPi2_WinIoT_.Library.Core
             /// </summary>
             D11 = 11,
             D12 = 12,
-            A2 = 14,
-            A3 = 15
+            A2 = 16,
+            A3 = 17
         }
 
         public enum StatusEnum
