@@ -22,37 +22,37 @@
     <AppXManifest Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-18T20:58:19.093</Modified>
+      <Modified>2015-09-19T06:07:51.868</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-06-04T17:02:06.000</Modified>
+      <Modified>2015-09-19T06:00:26.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2015-06-04T17:02:06.000</Modified>
+      <Modified>2015-09-19T06:07:43.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2015-06-04T17:02:06.000</Modified>
+      <Modified>2015-09-19T06:06:26.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2015-06-04T17:02:06.000</Modified>
+      <Modified>2015-09-19T06:06:00.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2015-06-04T17:02:06.000</Modified>
+      <Modified>2015-09-19T06:00:40.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2015-06-04T17:02:06.000</Modified>
+      <Modified>2015-09-19T06:01:09.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2015-06-04T17:02:06.000</Modified>
+      <Modified>2015-09-19T06:02:46.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
@@ -60,11 +60,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\entrypoint\Home Automation %28RPi2 WinIoT%29.exe">
       <PackagePath>entrypoint\Home Automation %28RPi2 WinIoT%29.exe</PackagePath>
-      <Modified>2015-09-18T20:58:18.391</Modified>
+      <Modified>2015-09-19T05:56:48.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Home Automation %28RPi2 WinIoT%29.exe">
       <PackagePath>Home Automation %28RPi2 WinIoT%29.exe</PackagePath>
-      <Modified>2015-09-18T20:58:19.090</Modified>
+      <Modified>2015-09-19T06:07:51.868</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Home Automation %28RPi2 WinIoT%29.xr.xml">
       <PackagePath>Home Automation %28RPi2 WinIoT%29.xr.xml</PackagePath>
@@ -88,7 +88,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-18T20:46:15.564</Modified>
+      <Modified>2015-09-19T05:56:49.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag\Desktop\OneDrive\Hackster.io\Challenge\Microsoft Challenge\Final Release\Home Automation %28RPi2 WinIoT%29\Home Automation %28RPi2 WinIoT%29\bin\x86\Debug\Core\Resources\Image\Common\AmbientLight_48.png">
       <PackagePath>Resources\Image\Common\AmbientLight_48.png</PackagePath>
