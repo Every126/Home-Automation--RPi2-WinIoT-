@@ -16,7 +16,7 @@
 		+ OnRequest, send 14-bytes response array based
 		  on selected mode by OnReceive. (Function: SendData)
 	
-	This sketch is provided as is without any WARRANTY. You can use it for personal as well as
+	This sketch is provided as it is without any WARRANTY. You can use it for personal as well as
 	commercial use.
 
 	I am not liable for any loss of data or injuries caused by this sketch.
