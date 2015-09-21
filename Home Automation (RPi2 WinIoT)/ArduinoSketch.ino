@@ -130,8 +130,8 @@ void SendData()
             Response[1] = (byte)((Value_PassiveIR == true) ? 1 : 0);
             
             // Response[2] byte is Sign byte for Temperature
-            //         0 - +ve Temperature
-            //         1 - -ve Temperature
+            //         0 - -ve Temperature
+            //         1 - +ve Temperature
             Response[2] = (byte)((Value_Temperature < 0) ? 0 : 1);
       
             Serial.println(Value_Temperature);
